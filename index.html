@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>AluraBooks</title>
+        <link rel="icon" type="image/x-icon" href="./assets/Logo.svg"> <!-- forma de adicionar um icone à página -->
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao"> <!-- entrada de informações true or false-->
+                <label for="menu"> <!-- transforma oque tem dentro da label em algo que interage com o input, que é um checkbox > tem que referenciar for="id_input"-->
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista__menu">
+                    <li class="lista__menu-titulo">Categorias</li>
+
+                    <li class="lista__menu-item">
+                        <a href="#" class="lista__menu-link">Programação</a>
+                    </li>
+
+                    <li class="lista__menu-item">
+                        <a href="#" class="lista__menu-link">Front-end</a>
+                    </li>
+
+                    <li class="lista__menu-item">
+                        <a href="#" class="lista__menu-link">Infraestrutura</a>
+                    </li>
+
+                    <li class="lista__menu-item">
+                        <a href="#" class="lista__menu-link">Business</a>
+                    </li>
+
+                    <li class="lista__menu-item">
+                        <a href="#" class="lista__menu-link">Design & UX</a>
+                    </li>
+                </ul>
+                <img src="./assets/Logo.svg" alt="Logo do Alurabooks" class="container__imagem">
+            </div>
+
+            <div class="container">
+                <a href="#"><img src="./assets/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
+                <a href="#"><img src="./assets/Compras.svg" alt="Minhas Compras" class="container__imagem"></a>
+                <a href="#"><img src="./assets/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+            </div>
+        </header>
+
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/ApacheKafka.svg" alt="Livro sobre a Apache Kafta dp alura AluraBooks"></div>
+                    <div class="swiper-slide"><img src="./assets/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
+                    <div class="swiper-slide"><img src="./assets/Javascript.svg" alt="Livro sobre JavaScript"></div>
+                    <div class="swiper-slide"><img src="./assets/Nodejs.svg" alt="Livro sobre NodeJS"></div>
+                    <div class="swiper-slide"><img src="./assets/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="./assets/Tuning.svg" alt="Livro sobre Tuning"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+  
+                <!-- If we need scrollbar <div class="swiper-scrollbar"></div>  -->
+            </div>       
+
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img src="./assets/Angular.svg" alt="Imagem do curso de Angular e Firbase" class="descrica__imagem">
+                </div>
+
+                <div class="card__botao">
+                    <ul class="botao">
+                        <li class="botao__item"><img src="./assets/Favoritos.svg" alt="Meus Favoritos"></li>
+                        <li class="botao__item"><img src="./assets/Compras.svg" alt="Minhas Compras"></li>
+                    </ul>
+                    <a href="#" class="botao__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <main></main>
+        <footer></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                            },
+            });
+          </script>
+
+    </body>
+</html>

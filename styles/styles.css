@@ -1,0 +1,23 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(carrossel.css);
+
+:root{
+    --cor-destaque: #EB9B00;
+    --cor-texto2: #002F52;
+    --cor-banner: #002F52;
+    --cor-principal: #FFFFFF;
+    --cor-texto: #000000;
+    --cor-secundaria-titulo: #858585;
+    --cor-secundaria-texto: #474646;
+    --cor-fundo: #EBECEE;;
+    --cor-fundo-footer: #ffffff;
+    --fonte-principal:'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

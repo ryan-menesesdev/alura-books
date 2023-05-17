@@ -1,0 +1,60 @@
+.cabecalho__menu-hamburguer{
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    background-image: url(../assets/Menu.svg);
+    background-repeat: no-repeat;
+}
+
+.cabecalho{
+    background-color: var(--cor-fundo-footer);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* possibilita a movimentação do objeto em top, left, bottom e right, livremente */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 0.5em;
+}
+
+.lista__menu{
+    display: none; /*deixa, nesse caso, a lista sem um espaço específico, ela não aparece. */
+    position: absolute; /*depende do tipo de position estabelecido pela tag pai dessa classe (cabecalho) > se for diferente de static (padrão estabelecido) pode se movimentar semelhante ao position relative*/
+    top: 100%; /*define a posição do topo de uma box de acordo com o elemento-pai do box*/
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista__menu{
+    display: block; /*aloca o espaço determinado para a lista*/
+}
+
+.container__botao{
+    display: none;
+}
+
+.lista__menu-titulo,
+.lista__menu-item{
+    padding: 1em;
+    background-color: var(--cor-fundo-footer);
+
+}
+
+.lista__menu-titulo{
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+.lista__menu-link{
+    background: var(--cor-texto2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
