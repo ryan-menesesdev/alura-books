@@ -33,12 +33,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+    gap: 10px;
 }
 
 .card__botao{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .botao{
@@ -48,6 +50,7 @@
 .descricao__titulo{
     font-weight: 700;
     color: var(--cor-destaque);
+    margin-top: 1em;
 }
 
 .descricao__titulo-livro{
