@@ -1,0 +1,7 @@
+.rodape{
+    padding: 1.5em;
+}
+
+.rodape__titulo{
+    color: var(--cor-texto);
+}

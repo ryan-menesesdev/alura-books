@@ -1,0 +1,34 @@
+.contato{
+    background-color:  var(--cor-principal);
+    padding: 1.5em;
+    border-bottom: 1px solid var(--cor-secundaria-titulo);
+}
+
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-texto2);
+}
+
+.contato__texto{
+    font-weight: 300;
+    color: var(--cor-texto2);
+    margin: 1em 0 1.5em 0;
+}
+
+.contato__email{
+    border: 1px solid var(--cor-texto2);
+    padding: 1em;
+    border-radius: 32px;
+    width: 90%;
+    color: var(--cor-texto2);
+    font-family: var(--fonte-principal);
+}
+
+.contato__email::placeholder{
+    color: var(--cor-texto2);
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    background: url(../assets/Cartinha.svg) no-repeat;
+    padding-left: 2em;
+}
