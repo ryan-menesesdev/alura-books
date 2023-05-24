@@ -14,6 +14,8 @@
 .swiper-button-prev, 
 .swiper-button-next{
     display: none;
+    transition-duration: 0s !important;
+
 }
 
 .swiper-pagination{
@@ -74,4 +76,30 @@
 
 .botao__item{
     margin: 0 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: 26px;
+        padding: 2em 0 1em 0;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0 3em 0;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next{
+        display: block;
+        top: 55%;
+}
+
+    .swiper{
+        width: 70%;
+    }
+
+    .card{
+        width: 50%;
+        margin: 3em auto;
+    }
 }
