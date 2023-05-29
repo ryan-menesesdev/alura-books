@@ -56,3 +56,17 @@
         margin-bottom: 1em;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .contato{
+        padding: 5em 20vw;
+    }
+
+    .contato__titulo{
+        width: 100%;
+    }
+
+    .contato__texto{
+        margin-right: 3em;
+    }
+}

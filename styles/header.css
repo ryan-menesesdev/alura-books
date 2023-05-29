@@ -72,6 +72,10 @@
         display: none   ;
     }
 
+    .cabecalho{
+        padding: 0 3em;
+    }
+
     .container__titulo,
     .container__titulo-negrito{
         font-family: var(--fonte-secundaria);
@@ -116,5 +120,31 @@
 
     .opcoes__botao{
         display: none;
+    }
+
+    .container__texto{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .opcoes{
+        margin: 0 auto 0 2em;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-texto);
+        margin-left: 1.5em;
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+    .cabecalho{
+        padding: 0 3em;
     }
 }
